@@ -9,10 +9,14 @@
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="scripts/quotemachine.js"></script>
+    <script src="scripts/weatherapp.js"></script>
 
     <h1>Local Weather</h1>
     <div class="container-fluid">
+        <h4>You are here:</h4>
+         <div id="data" class="location">location</div>
+
+        <button id="getweather" class="btn" onclick="getLocation ()">Get location</button>
 
         <div class="footer">Coded by Lars Kerick</div>
     </div>

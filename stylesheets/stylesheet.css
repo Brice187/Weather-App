@@ -1,34 +1,25 @@
 body {
-    background-color:lightyellow;
+    background-color:black;
+    color:coral;
   }
 
   h1 {
-    color:grey;
+    color:lightgrey;
     text-align:center;
-    font-family:'Lobster';
+    font-family:'Verdana';
   }
+h4 {
+    color:lightgrey;
+    font-family:'Verdana';
+}
+.location {
+    color: azure;
+    font-size: 14;
+}
 .footer {
     color:lightgray;
     font-size: 8;
     text-align: center;
 }
 
-  .header-box {
-          background-color: #eeeecc;
-          padding: 1%;
-          margin: 2%;
-          border-radius: 2em;
-      }
-   .body-box {
-          font-family:'Lobster';
-          font-size:28px;
-          color:#226666;
-          background-color:lightyellow ;
-          padding: 2%;
-          margin: 10%;
-          border-radius: 2em;
-      }
-.body-box:hover {
-  background-color: lightgoldenrodyellow;
-}
 
