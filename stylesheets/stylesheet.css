@@ -1,25 +1,28 @@
 body {
-    background-color:black;
-    color:coral;
-  }
-
-  h1 {
-    color:lightgrey;
-    text-align:center;
-    font-family:'Verdana';
-  }
+    background-color: black;
+    color: coral;
+}
+h1 {
+    color: lightgrey;
+    text-align: center;
+    font-family: 'Verdana';
+}
 h4 {
-    color:lightgrey;
-    font-family:'Verdana';
+    color: lightgrey;
+    font-family: 'Verdana';
+}
+img {
+    height: 300px;
+    float: right;
 }
 .location {
     color: azure;
     font-size: 14;
 }
 .footer {
-    color:lightgray;
+    color: lightgray;
     font-size: 8;
     text-align: center;
+
+	bottom:0;
 }
-
-

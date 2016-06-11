@@ -8,7 +8,7 @@ function showPosition(position) {
 function changeUnit() {
     if (unit === "metric") {
         unit = "imperial";
-         document.getElementById("changeunit").innerHTML = "Fahrenheit";
+        document.getElementById("changeunit").innerHTML = "Fahrenheit";
     } else {
         unit = "metric";
         document.getElementById("changeunit").innerHTML = "Celsius";
@@ -25,6 +25,17 @@ function getWeatherForLocation(position) {
     $.getJSON(json, function(a) {
 
         document.getElementById("data").innerHTML = "Temperatur: " + a.main.temp + " " + unit + " degree<br>Condition: " + a.weather[0].main + "<br>Description: " + a.weather[0].description + "<br>City: " + a.name;
+        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+                tags: a.weather[0].main,
+                tagmode: "any",
+                format: "json"
+            },
+            function(data) {
+                $.each(data.items, function(i, item) {
+                    $("<img />").attr("src", item.media.m).replaceAll("#images");
+                    if (i == 0) return false;
+                });
+            });
 
     });
 }
